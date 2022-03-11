@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 import styled from "styled-components"
 import {
     disableBodyScroll,
@@ -30,7 +30,7 @@ const Main = styled.div`
     padding: 0 20px;
     position: relative;
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
     text-decoration: none;
     color: ${props => props.theme.headerGrey};
     font-size: 14px;
@@ -59,11 +59,11 @@ const He1 = styled.h1`
 const Underlay = ({ open }) => (
     <Dropdown id="dropdown" open={open} >
         <List>
-            <StyledLink to="/about"><He1> About </He1></StyledLink>
-            <StyledLink to="/presentations"><He1> Presentations </He1></StyledLink>
-            <StyledLink to="/business"><He1> Business </He1></StyledLink>
-            <StyledLink to="/media"><He1> Media </He1></StyledLink>
-            <StyledLink to="/contact"><He1> Contact </He1></StyledLink>
+            <Link href="/about" passHref><StyledLink><He1> About </He1></StyledLink></Link>
+            <Link href="/presentations" passHref><StyledLink><He1> Presentations </He1></StyledLink></Link>
+            <Link href="/business" passHref><StyledLink><He1> Business </He1></StyledLink></Link>
+            <Link href="/media" passHref><StyledLink><He1> Media </He1></StyledLink></Link>
+            <Link href="/contact" passHref><StyledLink><He1> Contact </He1></StyledLink></Link>
         </List>
     </Dropdown>
 )

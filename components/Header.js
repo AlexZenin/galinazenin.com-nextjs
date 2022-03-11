@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Link from "next/link"
 import styled from "styled-components"
 
 const Header = styled.header`
@@ -23,7 +23,7 @@ const Li = styled.li`
 const Right = styled.div`
     display: flex;
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
     position: relative;
     text-decoration: none;
     color: ${props => props.theme.headerGrey};
@@ -44,17 +44,17 @@ const Dot = styled.div`
     background-color: transparent;
 `
 
-const ProductHeader = () => {
+function ProductHeader() {
     return (
         <Header>
             <Ul>
-                <Li><StyledLink to="/"> Galina Zenin </StyledLink></Li>
+                <Li><Link href="/" passHref><StyledLink> Galina Zenin </StyledLink></Link></Li>
                 <Right>
-                <Li><StyledLink to="/about"> About <Dot /></StyledLink></Li>
-                <Li><StyledLink to="/presentations"> Presentations <Dot /></StyledLink></Li>
-                <Li><StyledLink to="/business"> Business <Dot /></StyledLink></Li>
-                <Li><StyledLink to="/media"> Media <Dot /></StyledLink></Li>
-                <Li><StyledLink to="/contact"> Contact <Dot /></StyledLink></Li>
+                    <Li><Link href="/about" passHref><StyledLink> About <Dot /></StyledLink></Link></Li>
+                    <Li><Link href="/presentations" passHref><StyledLink> Presentations <Dot /></StyledLink></Link></Li>
+                    <Li><Link href="/business" passHref><StyledLink> Business <Dot /></StyledLink></Link></Li>
+                    <Li><Link href="/media" passHref><StyledLink> Media <Dot /></StyledLink></Link></Li>
+                    <Li><Link href="/contact" passHref><StyledLink> Contact <Dot /></StyledLink></Link></Li>
                 </Right>
             </Ul>
         </Header>

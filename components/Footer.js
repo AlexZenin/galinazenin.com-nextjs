@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 import { Facebook } from '@styled-icons/boxicons-logos/Facebook'
 import { Youtube } from '@styled-icons/boxicons-logos/Youtube';
 import { Linkedin } from '@styled-icons/boxicons-logos/Linkedin';
@@ -45,13 +45,13 @@ const Heading = styled.span`
     font-weight: 600;
     font-size: 14px;
 `
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
     text-decoration: none;
     color: white;
     margin-top: 20px;
     font-size: 14px;
 `
-const HomeLink = styled(Link)`
+const HomeLink = styled.a`
     text-decoration: none;
     color: white;
 `
@@ -95,30 +95,32 @@ const FooterComponent = props => (
     <Footer>
         <Container>
             <HeadingColumn>
-                <HomeLink to="/">
-                    <ColHeading>
-                        Galina Zenin
-                    </ColHeading>
-                </HomeLink>
+                <Link href="/" passHref>
+                    <HomeLink>
+                        <ColHeading>
+                            Galina Zenin
+                        </ColHeading>
+                    </HomeLink>
+                </Link>
             </HeadingColumn>
             <Column>
                 <Heading>
                     Main
                 </Heading>
-                <StyledLink to="/">Home</StyledLink>
-                <StyledLink to="/about">About</StyledLink>
-                <StyledLink to="/presentations">Presentations</StyledLink>
-                <StyledLink to="/business">Business</StyledLink>
-                <StyledLink to="/media">Media</StyledLink>
-                <StyledLink to="/contact">Contact</StyledLink>
+                <Link href="/" passHref><StyledLink>Home</StyledLink></Link>
+                <Link href="/about" passHref><StyledLink>About</StyledLink></Link>
+                <Link href="/presentations" passHref><StyledLink>Presentations</StyledLink></Link>
+                <Link href="/business" passHref><StyledLink>Business</StyledLink></Link>
+                <Link href="/media" passHref><StyledLink>Media</StyledLink></Link>
+                <Link href="/contact" passHref><StyledLink>Contact</StyledLink></Link>
             </Column>
             <Column>
                 <Heading>
                     Other
                 </Heading>
-                <StyledLink to="/presentations#PastPresentations">Past Presentations</StyledLink>
-                <StyledLink to="/presentations#Testimonials">Testimonials</StyledLink>
-                <StyledLink to="/media#Articles">Articles</StyledLink>
+                <Link href="/presentations#PastPresentations" passHref><StyledLink>Past Presentations</StyledLink></Link>
+                <Link href="/presentations#Testimonials" passHref><StyledLink>Testimonials</StyledLink></Link>
+                <Link href="/media#Articles" passHref><StyledLink>Articles</StyledLink></Link>
             </Column>
             <Column>
                 <Heading>

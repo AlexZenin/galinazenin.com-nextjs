@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import Header from "../Header"
-import "typeface-open-sans"
-import Footer from '../Footer'
 import MobileHeader from '../MobileHeader'
+import Footer from '../Footer'
+import "typeface-open-sans"
 
 const GlobalStyle = createGlobalStyle`
   html, body {

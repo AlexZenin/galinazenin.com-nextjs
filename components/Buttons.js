@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import Link from 'next/link'
 
 const Button = styled.p`
     display: inline-block;
@@ -30,17 +30,21 @@ const Filled = styled(Button)`
 `
 
 export const ButtonOutline = (props) => (
-    <Link to={ props.to || "/" }>
-        <Outline>
-            { props.text }
-        </Outline>
+    <Link href={ props.to || "/" }>
+        <a>
+            <Outline>
+                { props.text }
+            </Outline>
+        </a>
     </Link>
 )
 
 export const ButtonFilled = (props) => (
-    <Link to={ props.to || "/"  }>
-        <Filled>
-            { props.text }
-        </Filled>
+    <Link href={ props.to || "/"  }>
+        <a>
+            <Filled>
+                { props.text }
+            </Filled>
+        </a>
     </Link>
 )
