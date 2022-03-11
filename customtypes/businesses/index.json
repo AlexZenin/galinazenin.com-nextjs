@@ -1,0 +1,82 @@
+{
+  "id": "businesses",
+  "label": "businesses",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "business": []
+          },
+          "choices": {
+            "business": {
+              "type": "Slice",
+              "fieldset": "Business",
+              "description": "Business Image with Description",
+              "icon": "business",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name",
+                    "placeholder": "Business Name"
+                  }
+                },
+                "business": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "business"
+                    ],
+                    "label": "Business"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [],
+                    "label": "image"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                    "label": "Description",
+                    "placeholder": "Description"
+                  }
+                }
+              }
+            },
+            "large_heading": {
+              "type": "Slice",
+              "fieldset": "Large Heading",
+              "description": "Page Heading",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "heading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Heading",
+                    "placeholder": "Heading"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "hash": "23c37fc18fd77c7ba43df25f333b53ea",
+  "status": true
+}

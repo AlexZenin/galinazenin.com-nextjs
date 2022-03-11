@@ -1,0 +1,61 @@
+{
+  "id": "testimonials",
+  "label": "testimonials",
+  "repeatable": true,
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "testimonials": []
+          },
+          "choices": {
+            "testimonials": {
+              "type": "Slice",
+              "fieldset": "Testimonials",
+              "description": "Testimonials",
+              "icon": "face",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "profile_picture": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [],
+                    "label": "Profile Picture"
+                  }
+                },
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Name",
+                    "placeholder": "Jane Doe"
+                  }
+                },
+                "position": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Position",
+                    "placeholder": "Early childhood educator"
+                  }
+                },
+                "testimonial_body": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Testimonial Body",
+                    "placeholder": "Galina zenin is a superstar. Would love to see her present again!"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "hash": "4dc3e9981d252f3583358bdc317ad945",
+  "status": true
+}

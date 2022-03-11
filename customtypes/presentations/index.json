@@ -1,0 +1,201 @@
+{
+  "id": "presentations",
+  "label": "presentations",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "horizontal_gallery": [],
+            "image_stats": [],
+            "cta": [],
+            "past_presentations_link": [],
+            "testimonials": []
+          },
+          "choices": {
+            "large_heading": {
+              "type": "Slice",
+              "fieldset": "Large Heading",
+              "description": "Page Heading",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "heading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Heading",
+                    "placeholder": "Heading"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "horizontal_gallery": {
+              "type": "Slice",
+              "fieldset": "Horizontal Gallery",
+              "description": "Offset Horizontal Scrolling Gallery",
+              "icon": "image",
+              "display": "grid",
+              "non-repeat": {},
+              "repeat": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [],
+                    "label": "image"
+                  }
+                }
+              }
+            },
+            "description_stats": {
+              "type": "Slice",
+              "fieldset": "Description Stats",
+              "description": "Description with statistics to the right",
+              "icon": "account_balance_wallet",
+              "display": "grid",
+              "non-repeat": {
+                "heading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Heading",
+                    "placeholder": "Heading"
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                    "label": "Description",
+                    "placeholder": "Description"
+                  }
+                }
+              },
+              "repeat": {
+                "key_value": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Key Value",
+                    "placeholder": "Key Value"
+                  }
+                },
+                "subheading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subheading",
+                    "placeholder": "Subheading"
+                  }
+                }
+              }
+            },
+            "cta": {
+              "type": "Slice",
+              "fieldset": "CTA",
+              "description": "Wide Call to Action",
+              "icon": "notifications",
+              "display": "list",
+              "non-repeat": {
+                "cta": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "cta"
+                    ],
+                    "label": "CTA",
+                    "placeholder": "CTA"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "past_presentations_link": {
+              "type": "Slice",
+              "fieldset": "Past Presentations Link",
+              "description": "Link to past presentations",
+              "icon": "face",
+              "display": "list",
+              "non-repeat": {
+                "past_presentations": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "past_presentations"
+                    ],
+                    "label": "Past Presentations"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "centred_subheading": {
+              "type": "Slice",
+              "fieldset": "Centred Subheading",
+              "description": "Centered subheading",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "background1": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "White",
+                      "Grey"
+                    ],
+                    "default_value": "White",
+                    "label": "background",
+                    "placeholder": "Background Color"
+                  }
+                },
+                "heading1": {
+                  "type": "Text",
+                  "config": {
+                    "label": "heading",
+                    "placeholder": "Heading"
+                  }
+                },
+                "color": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Orange",
+                      "Grey"
+                    ],
+                    "default_value": "Orange",
+                    "label": "color",
+                    "placeholder": "Color"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "testimonials": {
+              "type": "Slice",
+              "fieldset": "Testimonials",
+              "description": "Link to testimonials",
+              "icon": "face",
+              "display": "list",
+              "non-repeat": {
+                "testimonials_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "label": "Testimonials Link",
+                    "placeholder": "Select testimonials page"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "hash": "bf27abedbe407bd6a3c39acba60915a6",
+  "status": true
+}

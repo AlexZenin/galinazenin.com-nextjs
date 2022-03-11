@@ -1,0 +1,63 @@
+{
+  "id": "timeline",
+  "label": "Timeline",
+  "repeatable": true,
+  "json": {
+    "Main": {
+      "heading": {
+        "type": "Text",
+        "config": {
+          "label": "Heading",
+          "placeholder": "Our Story"
+        }
+      },
+      "description": {
+        "type": "Text",
+        "config": {
+          "label": "Description",
+          "placeholder": "Starting from humble beginnings, Bonkers Beat was bread out of the desire to introduce music..."
+        }
+      },
+      "key_achivement": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Key Achivement"
+        }
+      },
+      "achievements": {
+        "type": "Group",
+        "config": {
+          "fields": {
+            "image": {
+              "type": "Image",
+              "config": {
+                "constraint": {},
+                "thumbnails": [],
+                "label": "image"
+              }
+            },
+            "year": {
+              "type": "Text",
+              "config": {
+                "label": "Year",
+                "placeholder": "2019"
+              }
+            },
+            "description": {
+              "type": "Text",
+              "config": {
+                "label": "Description",
+                "placeholder": "Nominated Team: Bonkers Beat Educators"
+              }
+            }
+          },
+          "label": "Achievements"
+        }
+      }
+    }
+  },
+  "hash": "c960b48d3c95f4df223dba21ba76df15",
+  "status": true
+}

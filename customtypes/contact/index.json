@@ -1,0 +1,35 @@
+{
+  "id": "contact",
+  "label": "contact",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "heading": {
+        "type": "Text",
+        "config": {
+          "label": "Heading",
+          "placeholder": "Heading"
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Image"
+        }
+      },
+      "body": {
+        "type": "StructuredText",
+        "config": {
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+          "allowTargetBlank": true,
+          "label": "Body",
+          "placeholder": "Body of text next to the contact form"
+        }
+      }
+    }
+  },
+  "hash": "e7c80b586bc0810c321939a86352ce9e",
+  "status": true
+}

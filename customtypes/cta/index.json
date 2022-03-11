@@ -1,0 +1,33 @@
+{
+  "id": "cta",
+  "label": "cta",
+  "repeatable": true,
+  "json": {
+    "Main": {
+      "subheading": {
+        "type": "Text",
+        "config": {
+          "label": "Subheading",
+          "placeholder": "Subheading"
+        }
+      },
+      "heading": {
+        "type": "Text",
+        "config": {
+          "label": "Heading",
+          "placeholder": "Heading"
+        }
+      },
+      "link": {
+        "type": "Link",
+        "config": {
+          "label": "Link",
+          "placeholder": "Link",
+          "select": null
+        }
+      }
+    }
+  },
+  "hash": "19b623b57b671caad4ac4fe59114322f",
+  "status": true
+}

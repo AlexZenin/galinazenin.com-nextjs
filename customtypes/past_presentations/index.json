@@ -1,0 +1,51 @@
+{
+  "id": "past_presentations",
+  "label": "Past Presentations",
+  "repeatable": false,
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {},
+          "choices": {
+            "past_presentations": {
+              "type": "Slice",
+              "fieldset": "Past Presentations",
+              "description": "List of past presentations",
+              "icon": "access_time",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "year": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Year",
+                    "placeholder": "Year"
+                  }
+                },
+                "subheading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subheading",
+                    "placeholder": "Location"
+                  }
+                },
+                "value": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Value",
+                    "placeholder": "Conference"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "hash": "d0e3e48b3e9dc6ba25b4ed1d2dbb0105",
+  "status": true
+}

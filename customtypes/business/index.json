@@ -1,0 +1,158 @@
+{
+  "id": "business",
+  "label": "business",
+  "repeatable": true,
+  "json": {
+    "Main": {
+      "slug": {
+        "type": "Text",
+        "config": {
+          "label": "Slug",
+          "placeholder": "URL Safe Name"
+        }
+      },
+      "heading": {
+        "type": "Text",
+        "config": {
+          "label": "Heading",
+          "placeholder": "Heading"
+        }
+      },
+      "website_url": {
+        "type": "Link",
+        "config": {
+          "allowTargetBlank": true,
+          "label": "Website URL",
+          "placeholder": "Website URL",
+          "select": null
+        }
+      },
+      "cover_image": {
+        "type": "Image",
+        "config": {
+          "constraint": {},
+          "thumbnails": [],
+          "label": "Cover Image"
+        }
+      },
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "centred_subheading": []
+          },
+          "choices": {
+            "centred_subheading": {
+              "type": "Slice",
+              "fieldset": "Subheading",
+              "description": "Subheading",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "alignment": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Left",
+                      "Center"
+                    ],
+                    "default_value": "Left",
+                    "label": "Alignment",
+                    "placeholder": "Alignment"
+                  }
+                },
+                "background1": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "White",
+                      "Grey"
+                    ],
+                    "default_value": "White",
+                    "label": "background",
+                    "placeholder": "Background Color"
+                  }
+                },
+                "heading1": {
+                  "type": "Text",
+                  "config": {
+                    "label": "heading",
+                    "placeholder": "Heading"
+                  }
+                },
+                "color": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Orange",
+                      "Grey"
+                    ],
+                    "default_value": "Orange",
+                    "label": "color",
+                    "placeholder": "Color"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "centered_text": {
+              "type": "Slice",
+              "fieldset": "Centered Text",
+              "description": "Centered Text",
+              "icon": "text_fields",
+              "display": "list",
+              "non-repeat": {
+                "background1": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "White",
+                      "Grey"
+                    ],
+                    "default_value": "White",
+                    "label": "background",
+                    "placeholder": "Background Color"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                    "allowTargetBlank": true,
+                    "label": "text",
+                    "placeholder": "Text"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "cta": {
+              "type": "Slice",
+              "fieldset": "CTA",
+              "description": "Wide Call to Action",
+              "icon": "notifications",
+              "display": "list",
+              "non-repeat": {
+                "cta": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "cta"
+                    ],
+                    "label": "CTA",
+                    "placeholder": "CTA"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "hash": "259663b2e684f13f84b756e0e9480936",
+  "status": true
+}

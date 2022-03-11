@@ -1,0 +1,210 @@
+{
+  "id": "about",
+  "label": "about",
+  "repeatable": true,
+  "json": {
+    "Main": {
+      "body": {
+        "type": "Slices",
+        "fieldset": "Slice zone",
+        "config": {
+          "labels": {
+            "large_heading": [],
+            "past_presentations": [],
+            "timeline": []
+          },
+          "choices": {
+            "image_text": {
+              "type": "Slice",
+              "fieldset": "Image Text",
+              "description": "2 column layout with image and text",
+              "icon": "texture",
+              "display": "list",
+              "non-repeat": {
+                "heading1": {
+                  "type": "Text",
+                  "config": {
+                    "label": "heading",
+                    "placeholder": "Heading"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                    "allowTargetBlank": true,
+                    "label": "text",
+                    "placeholder": "Text"
+                  }
+                },
+                "image_alignment": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Right",
+                      "Left"
+                    ],
+                    "default_value": "Right",
+                    "label": "Image Alignment",
+                    "placeholder": "Image Alignment"
+                  }
+                },
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "constraint": {},
+                    "thumbnails": [],
+                    "label": "image"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "large_heading": {
+              "type": "Slice",
+              "fieldset": "Large Heading",
+              "description": "Page Heading",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "heading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Heading",
+                    "placeholder": "Heading"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "centred_subheading": {
+              "type": "Slice",
+              "fieldset": "Centred Subheading",
+              "description": "Centered subheading",
+              "icon": "format_color_text",
+              "display": "list",
+              "non-repeat": {
+                "background1": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "White",
+                      "Grey"
+                    ],
+                    "default_value": "White",
+                    "label": "background",
+                    "placeholder": "Background Color"
+                  }
+                },
+                "heading1": {
+                  "type": "Text",
+                  "config": {
+                    "label": "heading",
+                    "placeholder": "Heading"
+                  }
+                },
+                "color": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "Orange",
+                      "Grey"
+                    ],
+                    "default_value": "Orange",
+                    "label": "color",
+                    "placeholder": "Color"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "centered_text": {
+              "type": "Slice",
+              "fieldset": "Centered Text",
+              "description": "Centered Text",
+              "icon": "text_fields",
+              "display": "list",
+              "non-repeat": {
+                "background1": {
+                  "type": "Select",
+                  "config": {
+                    "options": [
+                      "White",
+                      "Grey"
+                    ],
+                    "default_value": "White",
+                    "label": "background",
+                    "placeholder": "Background Color"
+                  }
+                },
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,o-list-item",
+                    "allowTargetBlank": true,
+                    "label": "text",
+                    "placeholder": "Text"
+                  }
+                }
+              },
+              "repeat": {}
+            },
+            "past_presentations": {
+              "type": "Slice",
+              "fieldset": "Past Presentations",
+              "description": "List of past presentations",
+              "icon": "access_time",
+              "display": "list",
+              "non-repeat": {},
+              "repeat": {
+                "year": {
+                  "type": "Number",
+                  "config": {
+                    "label": "Year",
+                    "placeholder": "Year"
+                  }
+                },
+                "subheading": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Subheading",
+                    "placeholder": "Location"
+                  }
+                },
+                "value": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Value",
+                    "placeholder": "Conference"
+                  }
+                }
+              }
+            },
+            "timeline": {
+              "type": "Slice",
+              "fieldset": "Timeline",
+              "description": "Timeline of key achievements",
+              "icon": "access_time",
+              "non-repeat": {
+                "timeline_link": {
+                  "type": "Link",
+                  "config": {
+                    "select": "document",
+                    "customtypes": [
+                      "timeline"
+                    ],
+                    "label": "Timeline Link",
+                    "placeholder": "Select timeline"
+                  }
+                }
+              },
+              "repeat": {}
+            }
+          }
+        }
+      }
+    }
+  },
+  "hash": "9f6d3c7c51b8f8790f5ce407cc2d7cef",
+  "status": true
+}
