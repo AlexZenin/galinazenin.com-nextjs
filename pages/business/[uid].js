@@ -89,13 +89,13 @@ export async function getStaticProps({ params, previewData }) {
     }
 }
 
-export const getStaticPaths = async () => {
+export async function getStaticPaths() {
     const client = createClient();
 
     const documents = await client.getAllByType("business");
     
     return {
         paths: documents.map((doc) => prismicH.asLink(doc, linkResolver)),
-        fallback: true,
+        fallback: false,
     };
 };

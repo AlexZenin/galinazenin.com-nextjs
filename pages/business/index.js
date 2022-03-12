@@ -1,7 +1,7 @@
 import React from 'react'
-import { createClient } from '../prismicio'
-import Layout from "../components/Layout/Layout"
-import SliceZone from '../components/SliceZone'
+import { createClient } from '../../prismicio'
+import Layout from "../../components/Layout/Layout"
+import SliceZone from '../../components/SliceZone'
 
 export default function Businesses({ page }) { 
     return (
