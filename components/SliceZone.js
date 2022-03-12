@@ -48,10 +48,10 @@ const SliceZone = props => {
             case "past_presentations_link":
                 return <PastPresentations 
                     key={slice.id} 
-                    data={{items: slice.primary.past_presentations.document.data.body[0].items}} 
+                    data={{items: slice.primary.past_presentations.data.body[0].items}} 
                 />
             case "testimonials":
-                return <Testimonials key={slice.id} data={{items: slice.primary.testimonials_link.document.data.body[0].items}} />
+                return <Testimonials key={slice.id} data={{items: slice.primary.testimonials_link.data.body[0].items}} />
             case "business":
                 return <Business key={slice.id} data={slice} />
             case "horizontal_gallery":

@@ -58,7 +58,7 @@ const Arrow = styled(ArrowRight)`
 `
 
 const Cta = ({ data }) => { 
-    let { heading, subheading, link } = data.primary.cta.document.data
+    let { heading, subheading, link } = data.primary.cta.data
     return(
         <Section>
             <Subheading>{ subheading }</Subheading>
