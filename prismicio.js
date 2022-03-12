@@ -23,7 +23,7 @@ export function linkResolver(doc) {
     case 'business':
       return `/business/${doc.uid}`
     default:
-      return null
+      return '/'
   }
 }
 
