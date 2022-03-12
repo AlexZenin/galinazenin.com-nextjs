@@ -10,17 +10,21 @@ export function linkResolver(doc) {
   switch (doc.type) {
     case 'home':
       return '/'
+    case 'about':
+      return '/about'
     case 'contact':
       return '/contact'
-    case 'page':
-      return `/${doc.uid}`
+    case 'businesses':
+      return '/business'
+    case 'business':
+      return `/business/${doc.uid}`
     default:
       return null
   }
 }
 
 // This factory function allows smooth preview setup
-export function createClient(config) {
+export function createClient(config = {}) {
   const client = prismic.createClient(endpoint, {
     ...config,
   })

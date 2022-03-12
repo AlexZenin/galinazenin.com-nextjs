@@ -3,7 +3,7 @@ import { createClient } from '../prismicio'
 import Layout from "../components/Layout/Layout"
 import SliceZone from '../components/SliceZone'
 
-export default function Presentations({ page }) { 
+export default function Businesses({ page }) { 
     return (
         <Layout>
             <SliceZone slices={page.data.body} />
@@ -14,16 +14,8 @@ export default function Presentations({ page }) {
 export async function getStaticProps({ previewData }) {
     const client = createClient({ previewData })
 
-    const page = await client.getSingle('presentations', {
-        fetchLinks: [
-            'testimonials.body',
-            'past_presentations.body',
-            'cta.subheading',
-            'cta.heading',
-            'cta.link',
-        ]
-    })
-    
+    const page = await client.getSingle('businesses')
+
     return {
         props: { page },
     }

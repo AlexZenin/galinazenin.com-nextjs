@@ -3,13 +3,13 @@ import { createClient } from '../prismicio'
 import Layout from "../components/Layout/Layout"
 import SliceZone from '../components/SliceZone'
 
-const About = ({ page }) => (
-    <Layout>
-        <SliceZone slices={page.data.body} />
-    </Layout>
-)
-
-export default About
+export default function About({ page }) {
+    return (
+        <Layout>
+            <SliceZone slices={page.data.body} />
+        </Layout>
+    )
+}
 
 export async function getStaticProps({ previewData }) {
     const client = createClient({ previewData })

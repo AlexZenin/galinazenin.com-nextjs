@@ -7,7 +7,6 @@ import SliceZone from "../components/SliceZone"
 import Layout from "../components/Layout/Layout"
 import { PrismicRichText } from '@prismicio/react'
 
-
 const Section = styled.section`
     display: grid;
     grid-template-columns: 58% 38%;
