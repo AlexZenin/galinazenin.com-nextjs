@@ -35,7 +35,7 @@ export function createClient(config = {}) {
 
   enableAutoPreviews({
     client,
-    context: config.context,
+    previewData: config.previewData,
     req: config.req,
   })
 
