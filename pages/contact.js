@@ -1,6 +1,7 @@
 import { createClient } from '../prismicio'
 import React from "react"
 import styled from 'styled-components'
+import { PrismicRichText } from '@prismicio/react'
 import Layout from "../components/Layout/Layout"
 import Input from '../components/Input'
 import axios from 'axios'
@@ -260,9 +261,9 @@ function Contact({ page }) {
             <Layout>
                 <Section>
                     <Heading>{heading}</Heading>
-                    <Div
-                        dangerouslySetInnerHTML={{ __html: body.html }}
-                    />
+                    <Div>
+                        <PrismicRichText field={body} />
+                    </Div>
                     <Grid>
                         <Aside>
                             <Img src={image.url} alt={image.alt} />
