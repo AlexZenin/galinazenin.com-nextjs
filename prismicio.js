@@ -14,6 +14,8 @@ export function linkResolver(doc) {
       return '/about'
     case 'contact':
       return '/contact'
+    case 'media':
+      return '/media'
     case 'businesses':
       return '/business'
     case 'business':
